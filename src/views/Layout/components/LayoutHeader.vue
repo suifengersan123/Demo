@@ -1,5 +1,6 @@
 <script setup>
-import {useCategoryStore} from '@/stores/category'
+import {useCategoryStore} from '@/stores/categoryStore'
+import HeaderCart from './HeaderCart.vue';
  //使用pinia中的数据
  const categoryStore = useCategoryStore();
 </script>
@@ -24,7 +25,7 @@ import {useCategoryStore} from '@/stores/category'
         <input type="text" placeholder="搜一搜">
       </div>
       <!-- 头部购物车 -->
-      
+      <HeaderCart ></HeaderCart>
     </div>
   </header>
 </template>
@@ -131,4 +132,4 @@ import {useCategoryStore} from '@/stores/category'
     }
   }
 }
-</style>
+</style>@/stores/categoryStore
